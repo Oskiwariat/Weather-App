@@ -1,7 +1,9 @@
+import Weather from "./Weather";
+
 const App = () => {
   return (
     <>
-      <div>hej</div>
+      <Weather />
     </>
   );
 };
