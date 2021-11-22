@@ -69,13 +69,7 @@ class Weather extends React.Component {
             onchange={this.handleChange}
             onsubmit={this.handleFormSubmit}
           />
-          <View
-            err={err}
-            value={value}
-            city={city}
-            temp={temp}
-            weather={weather}
-          />
+          <View err={err} city={city} temp={temp} weather={weather} />
         </div>
       </>
     );
