@@ -10,6 +10,7 @@ const Form = (props) => {
           className="search__input"
           type="text"
           value={value}
+          placeholder="Search..."
           onChange={onchange}
         />
         <button className="search__btn">X</button>

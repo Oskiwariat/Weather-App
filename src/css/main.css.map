@@ -1,9 +1,12 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB",
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;ACJD,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,eAAe;CACxB",
     "sources": [
         "../sass/main.scss",
-        "../sass/_reset.scss"
+        "../sass/_reset.scss",
+        "../sass/_weather.scss",
+        "../sass/_form.scss",
+        "../sass/_view.scss"
     ],
     "names": [],
     "file": "main.css"

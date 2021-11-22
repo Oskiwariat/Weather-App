@@ -1,0 +1,14 @@
+.info {
+  flex-grow: 1;
+  border: 1px solid black;
+  margin-top: 20px;
+  &__temp {
+    font-size: 50px;
+  }
+  &__weather {
+    font-size: 20px;
+  }
+  &__city {
+    font-size: 15px;
+  }
+}
