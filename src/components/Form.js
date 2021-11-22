@@ -1,13 +1,21 @@
 import React from "react";
 
-class Form extends React.Component {
-  render() {
-    return (
-      <>
-        <div>formularz</div>
-      </>
-    );
-  }
-}
+const Form = (props) => {
+  const { value, onchange, onsubmit } = props;
+
+  return (
+    <>
+      <form onSubmit={onsubmit} className="search">
+        <input
+          className="search__city-input"
+          type="text"
+          value={value}
+          onChange={onchange}
+        />
+        <button className="search__btn">X</button>
+      </form>
+    </>
+  );
+};
 
 export default Form;
