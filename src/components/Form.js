@@ -7,7 +7,7 @@ const Form = (props) => {
     <>
       <form onSubmit={onsubmit} className="search">
         <input
-          className="search__city-input"
+          className="search__input"
           type="text"
           value={value}
           onChange={onchange}
