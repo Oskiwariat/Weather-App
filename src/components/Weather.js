@@ -1,6 +1,7 @@
 import React from "react";
 
 import Form from "./Form";
+import View from "./View";
 
 const APIKey = "25be78386a15a34cab381c020599ee67";
 
@@ -23,6 +24,7 @@ class Weather extends React.Component {
     if (this.state.value === "") {
       return alert("Enter the city!");
     }
+
     e.preventDefault();
 
     const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}&units=metric`;
@@ -54,22 +56,27 @@ class Weather extends React.Component {
             weather: "",
           });
         }
-
-        throw new Error(
-          "Something went wrong! Check your fetch method or try again!"
-        );
       });
   };
 
   render() {
+    const { err, value, city, temp, weather } = this.state;
     return (
       <>
-        <div>hej</div>
-        <Form
-          value={this.state.value}
-          onchange={this.handleChange}
-          onsubmit={this.handleFormSubmit}
-        />
+        <div className="wrap">
+          <Form
+            value={value}
+            onchange={this.handleChange}
+            onsubmit={this.handleFormSubmit}
+          />
+          <View
+            err={err}
+            value={value}
+            city={city}
+            temp={temp}
+            weather={weather}
+          />
+        </div>
       </>
     );
   }
