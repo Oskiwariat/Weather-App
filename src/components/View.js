@@ -19,14 +19,16 @@ const View = (props) => {
   const showClouds = weather === "Clouds" ? cloudy : null;
   const showSnow = weather === "Snow" ? snow : null;
 
+  const showRightImage = showSun || showRain || showClouds || showSnow;
+
   return (
     <>
       <div className="info">
         {err || err === null ? null : (
           <img
             className="info__image"
-            src={showSun || showRain || showClouds || showSnow}
-            alt="asd"
+            src={showRightImage}
+            alt="weather-image"
           />
         )}
         <h1 className="info__temp">{showGradesOrNothing}</h1>

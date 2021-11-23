@@ -11,8 +11,12 @@
   }
   &__weather-description {
     font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   &__city {
     font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 }
