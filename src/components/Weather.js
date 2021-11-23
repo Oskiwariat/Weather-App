@@ -10,8 +10,9 @@ class Weather extends React.Component {
     err: null,
     value: "",
     temp: "",
-    weather: "",
+    weatherdescription: "",
     city: "",
+    weather: "",
   };
 
   handleChange = (e) => {
@@ -43,7 +44,8 @@ class Weather extends React.Component {
           value: "",
           city: this.state.value,
           temp: data.main.temp,
-          weather: data.weather[0].description,
+          weatherdescription: data.weather[0].description,
+          weather: data.weather[0].main,
         });
       })
       .catch((err) => {
@@ -53,6 +55,7 @@ class Weather extends React.Component {
             city: this.state.value,
             value: "",
             temp: "",
+            weatherdescription: "",
             weather: "",
           });
         }
@@ -60,7 +63,7 @@ class Weather extends React.Component {
   };
 
   render() {
-    const { err, value, city, temp, weather } = this.state;
+    const { err, value, city, temp, weatherdescription, weather } = this.state;
     return (
       <>
         <div className="wrap">
@@ -69,7 +72,13 @@ class Weather extends React.Component {
             onchange={this.handleChange}
             onsubmit={this.handleFormSubmit}
           />
-          <View err={err} city={city} temp={temp} weather={weather} />
+          <View
+            err={err}
+            city={city}
+            temp={temp}
+            weatherdescription={weatherdescription}
+            weather={weather}
+          />
         </div>
       </>
     );
