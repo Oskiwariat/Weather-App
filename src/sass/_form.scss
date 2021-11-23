@@ -1,12 +1,27 @@
 .search {
-  border: 1px solid black;
-  flex-basis: 10%;
-  line-height: 400%;
+  flex-basis: 20%;
+
   &__input {
-    margin-right: 10px;
-    padding: 10px 0 10px 5px;
+    line-height: 300%;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transform: translate(3%, -20%);
+    letter-spacing: 2px;
   }
   &__btn {
-    padding: 10px;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-bottom-left-radius: 90%;
+    font-weight: bold;
+    transform: translate(90%, -30%);
+    &:hover {
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+      cursor: pointer;
+    }
   }
 }

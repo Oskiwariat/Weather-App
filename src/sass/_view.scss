@@ -1,21 +1,25 @@
 .info {
   flex-grow: 1;
-  border: 1px solid black;
   margin-top: 20px;
+  padding: 60px 30px 0 30px;
+  border: 3px solid black;
 
   &__image {
     width: 100%;
+    padding-bottom: 15px;
   }
   &__temp {
-    font-size: 50px;
+    font-size: 70px;
+    padding-bottom: 10px;
   }
   &__weather-description {
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-bottom: 5px;
   }
   &__city {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
