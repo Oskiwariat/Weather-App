@@ -3,6 +3,9 @@ import React from "react";
 import Form from "./Form";
 import View from "./View";
 
+import afternoon from "../images/after_noon.png";
+import night from "../images/night.png";
+
 const APIKey = "25be78386a15a34cab381c020599ee67";
 
 class Weather extends React.Component {
@@ -64,9 +67,12 @@ class Weather extends React.Component {
 
   render() {
     const { err, value, city, temp, weatherdescription, weather } = this.state;
+    const date = new Date().getHours();
+    const whichBackground = date >= 6 && date <= 19 ? afternoon : night;
     return (
       <>
         <div className="wrap">
+          <img className="wrap__image" src={whichBackground} alt="" />
           <Form
             value={value}
             onchange={this.handleChange}

@@ -1,26 +1,31 @@
 .info {
-  flex-grow: 1;
-  margin-top: 20px;
-  padding: 60px 30px 0 30px;
-  border: 3px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  &__image {
-    width: 100%;
-    padding-bottom: 15px;
-  }
   &__temp {
     font-size: 70px;
-    padding-bottom: 10px;
-  }
-  &__weather-description {
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 5px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid black;
+    margin: 0 40px;
   }
   &__city {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding-top: 20px;
+  }
+  &__weather-description {
     font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+    margin: 0 40px;
   }
 }

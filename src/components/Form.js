@@ -13,7 +13,7 @@ const Form = (props) => {
           placeholder="Search city..."
           onChange={onchange}
         />
-        <button className="search__btn">X</button>
+        <button className="search__btn">Find</button>
       </form>
     </>
   );

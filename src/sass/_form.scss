@@ -1,22 +1,27 @@
 .search {
-  flex-basis: 20%;
-
+  position: absolute;
+  display: flex;
+  width: 100%;
+  // border: 2px solid black;
+  padding: 10px;
   &__input {
-    line-height: 300%;
-    padding-left: 10px;
+    flex-basis: 50%;
     font-size: 20px;
-    font-weight: bold;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    transform: translate(3%, -20%);
+    padding-left: 10px;
     letter-spacing: 2px;
+    background-color: transparent;
+    border-style: none;
   }
   &__btn {
-    padding: 15px 15px;
-    font-size: 20px;
-    border-bottom-left-radius: 90%;
-    font-weight: bold;
-    transform: translate(90%, -30%);
+    flex-grow: 1;
+    padding: 5px 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     &:hover {
       background-color: white;
       border: 2px solid black;
