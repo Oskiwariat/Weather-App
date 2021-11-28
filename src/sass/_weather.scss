@@ -4,6 +4,23 @@
   left: 50%;
   transform: translate(-50%, -150%);
   width: 60%;
+  @include mediaqueries(small) {
+    top: 60%;
+  }
+  @include mediaqueries(smallx) {
+    top: 100%;
+    left: 25%;
+    width: 30%;
+  }
+  @include mediaqueries(xsmall) {
+    top: 100%;
+    left: 20%;
+    width: 30%;
+  }
+  @include mediaqueries(medium) {
+    top: 103%;
+    left: 23%;
+  }
 }
 
 .weather__date {
@@ -13,6 +30,21 @@
   transform: translate(-50%, -50%);
   width: 75%;
   font-size: 14px;
+  @include mediaqueries(small) {
+    top: 85%;
+  }
+  @include mediaqueries(smallx) {
+    top: 85%;
+    left: 73.5%;
+  }
+  @include mediaqueries(xsmall) {
+    top: 83%;
+    left: 69.5%;
+  }
+  @include mediaqueries(medium) {
+    top: 78%;
+    left: 74%;
+  }
 }
 
 .weather__message {

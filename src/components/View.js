@@ -24,11 +24,7 @@ const View = (props) => {
   return (
     <>
       {err || err === null ? null : (
-        <img
-          className="weather__image"
-          src={showRightImage}
-          alt="weatherimage"
-        />
+        <img className="weather__image" src={cloudy} alt="weatherimage" />
       )}
       {err || err === null ? null : (
         <div className="info">

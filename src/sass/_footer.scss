@@ -1,10 +1,16 @@
 .footer {
   position: absolute;
-  top: 98%;
+  top: 98.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 66%;
   border: 1px solid black;
+  @include mediaqueries(smallx) {
+    top: 97.5%;
+  }
+  @include mediaqueries(xsmall) {
+    top: 97.5%;
+  }
   &-title {
     font-size: 10px;
     padding: 3px;

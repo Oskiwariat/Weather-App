@@ -1,5 +1,5 @@
 .wrap {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,5 +7,18 @@
   position: relative;
   &__image {
     opacity: 0.9;
+    width: 100%;
+    @media (min-width: 375px) {
+      width: 123%;
+    }
+    @include mediaqueries(small) {
+      width: 113%;
+    }
   }
+  // @include mediaqueries(small) {
+  //   height: 100vh;
+  // }
+  // @include mediaqueries(xsmall) {
+  //   height: 100vh;
+  // }
 }

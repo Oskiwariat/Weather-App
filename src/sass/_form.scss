@@ -2,10 +2,9 @@
   position: absolute;
   display: flex;
   width: 100%;
-  // border: 2px solid black;
   padding: 10px;
   &__input {
-    flex-basis: 50%;
+    flex-grow: 1;
     font-size: 20px;
     padding-left: 10px;
     letter-spacing: 2px;

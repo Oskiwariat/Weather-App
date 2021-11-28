@@ -1,9 +1,12 @@
 $breakpoints: (
-  xsmall: (
-    min-width: 360px,
-  ),
   small: (
-    min-width: 680px,
+    min-width: 411px,
+  ),
+  smallx: (
+    min-width: 568px,
+  ),
+  xsmall: (
+    min-width: 640px,
   ),
   medium: (
     min-width: 800px,
