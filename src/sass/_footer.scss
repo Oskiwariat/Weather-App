@@ -1,0 +1,15 @@
+.footer {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  border: 1px solid black;
+  &-title {
+    font-size: 10px;
+    padding: 3px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

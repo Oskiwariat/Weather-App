@@ -2,6 +2,7 @@ import React from "react";
 
 import Form from "./Form";
 import View from "./View";
+import Footer from "./Footer";
 
 import afternoon from "../images/after_noon.png";
 import night from "../images/night.png";
@@ -85,6 +86,7 @@ class Weather extends React.Component {
             weatherdescription={weatherdescription}
             weather={weather}
           />
+          <Footer />
         </div>
       </>
     );
