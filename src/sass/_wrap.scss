@@ -5,6 +5,9 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  @include mediaqueries(xxlarge) {
+    border: 2px solid black;
+  }
   &__image {
     opacity: 0.9;
     width: 100%;
@@ -15,10 +18,4 @@
       width: 113%;
     }
   }
-  // @include mediaqueries(small) {
-  //   height: 100vh;
-  // }
-  // @include mediaqueries(xsmall) {
-  //   height: 100vh;
-  // }
 }

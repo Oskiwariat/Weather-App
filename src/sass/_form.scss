@@ -3,6 +3,15 @@
   display: flex;
   width: 100%;
   padding: 10px;
+  @include mediaqueries(xmedium) {
+    padding: 20px;
+  }
+  @include mediaqueries(xxlarge) {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 4px solid black;
+    border-left: 2px solid black;
+  }
   &__input {
     flex-grow: 1;
     font-size: 20px;
@@ -10,6 +19,13 @@
     letter-spacing: 2px;
     background-color: transparent;
     border-style: none;
+    @include mediaqueries(xmedium) {
+      font-size: 35px;
+      padding: 10px 0 10px 20px;
+    }
+    @include mediaqueries(medium) {
+      font-size: 28px;
+    }
   }
   &__btn {
     flex-grow: 1;
@@ -21,6 +37,16 @@
     border: 2px solid black;
     text-transform: uppercase;
     letter-spacing: 3px;
+    @include mediaqueries(xmedium) {
+      font-size: 35px;
+      margin-left: 20px;
+    }
+    @include mediaqueries(medium) {
+      font-size: 28px;
+    }
+    @include mediaqueries(xxlarge) {
+      border: 4px solid black;
+    }
     &:hover {
       background-color: white;
       border: 2px solid black;

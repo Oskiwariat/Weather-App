@@ -3,22 +3,35 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  top: 72%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include mediaqueries(little) {
+    top: 69%;
+  }
   @include mediaqueries(small) {
     top: 69%;
   }
   @include mediaqueries(smallx) {
-    top: 50%;
+    top: 46%;
     left: 74%;
   }
   @include mediaqueries(xsmall) {
     top: 50%;
     left: 70%;
   }
+  @include mediaqueries(xmedium) {
+    top: 71%;
+    left: 50%;
+  }
   @include mediaqueries(medium) {
     left: 74%;
+  }
+  @include mediaqueries(large) {
+    top: 50%;
+  }
+  @include mediaqueries(xxlarge) {
+    top: 47%;
   }
 
   &__temp {
@@ -28,15 +41,25 @@
     margin: 0 40px;
     @include mediaqueries(smallx) {
       margin: 0 185px;
-    }
-    @include mediaqueries(smallx) {
       font-size: 65px;
     }
     @include mediaqueries(xsmall) {
       margin: 0 200px;
     }
+    @include mediaqueries(xmedium) {
+      font-size: 100px;
+    }
     @include mediaqueries(medium) {
       margin: 0 280px;
+    }
+    @include mediaqueries(large) {
+      padding-bottom: 10px;
+    }
+    @include mediaqueries(xxlarge) {
+      margin: 0 750px;
+      font-size: 100px;
+      padding-bottom: 30px;
+      border-bottom: 4px solid black;
     }
   }
   &__city {
@@ -45,7 +68,13 @@
     letter-spacing: 6px;
     padding-top: 20px;
     @include mediaqueries(smallx) {
-      font-size: 25px;
+      font-size: 23px;
+    }
+    @include mediaqueries(xmedium) {
+      font-size: 50px;
+    }
+    @include mediaqueries(xxlarge) {
+      font-size: 55px;
     }
   }
   &__weather-description {
@@ -58,17 +87,27 @@
     margin: 0 40px;
     @include mediaqueries(smallx) {
       margin: 0 145px;
-    }
-    @include mediaqueries(smallx) {
       top: 50%;
       left: 65%;
-      font-size: 17px;
+      font-size: 16px;
     }
     @include mediaqueries(xsmall) {
       margin: 0 160px;
     }
+    @include mediaqueries(xmedium) {
+      font-size: 28px;
+    }
     @include mediaqueries(medium) {
       margin: 0 230px;
+    }
+    @include mediaqueries(large) {
+      padding-bottom: 20px;
+    }
+    @include mediaqueries(xxlarge) {
+      margin: 0 600px;
+      font-size: 30px;
+      padding-bottom: 35px;
+      border-bottom: 4px solid black;
     }
   }
 }

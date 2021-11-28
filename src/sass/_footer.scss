@@ -5,11 +5,29 @@
   transform: translate(-50%, -50%);
   width: 66%;
   border: 1px solid black;
+  @include mediaqueries(little) {
+    top: 98%;
+    width: 85%;
+  }
   @include mediaqueries(smallx) {
-    top: 97.5%;
+    top: 95.5%;
   }
   @include mediaqueries(xsmall) {
+    top: 96.5%;
+  }
+  @include mediaqueries(xmedium) {
+    top: 98%;
+    border: 2px solid black;
+  }
+  @include mediaqueries(medium) {
+    top: 96%;
+  }
+  @include mediaqueries(large) {
     top: 97.5%;
+  }
+  @include mediaqueries(xxlarge) {
+    top: 98%;
+    border: 4px solid black;
   }
   &-title {
     font-size: 10px;
@@ -17,5 +35,18 @@
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
+    @include mediaqueries(little) {
+      font-size: 16px;
+      padding: 10px 5px;
+    }
+    @include mediaqueries(smallx) {
+      font-size: 13px;
+    }
+    @include mediaqueries(xmedium) {
+      font-size: 25px;
+    }
+    @include mediaqueries(large) {
+      letter-spacing: 7px;
+    }
   }
 }

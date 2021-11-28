@@ -1,9 +1,13 @@
 .weather__image {
   position: fixed;
-  top: 62%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -150%);
   width: 60%;
+
+  @include mediaqueries(little) {
+    top: 61%;
+  }
   @include mediaqueries(small) {
     top: 60%;
   }
@@ -13,13 +17,29 @@
     width: 30%;
   }
   @include mediaqueries(xsmall) {
-    top: 100%;
+    top: 96%;
     left: 20%;
     width: 30%;
   }
+  @include mediaqueries(xmedium) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 45%;
+  }
   @include mediaqueries(medium) {
-    top: 103%;
+    top: 80%;
     left: 23%;
+    width: 27%;
+  }
+  @include mediaqueries(large) {
+    width: 30%;
+    top: 66%;
+  }
+  @include mediaqueries(xxlarge) {
+    width: 30%;
+    top: 75%;
+    left: 27%;
   }
 }
 
@@ -30,20 +50,35 @@
   transform: translate(-50%, -50%);
   width: 75%;
   font-size: 14px;
+  @include mediaqueries(little) {
+    top: 87%;
+  }
   @include mediaqueries(small) {
     top: 85%;
   }
   @include mediaqueries(smallx) {
-    top: 85%;
+    top: 80%;
     left: 73.5%;
   }
   @include mediaqueries(xsmall) {
     top: 83%;
     left: 69.5%;
   }
+  @include mediaqueries(xmedium) {
+    font-size: 19px;
+    top: 87%;
+    left: 50%;
+  }
   @include mediaqueries(medium) {
     top: 78%;
     left: 74%;
+  }
+  @include mediaqueries(large) {
+    top: 73%;
+  }
+  @include mediaqueries(xxlarge) {
+    top: 67.5%;
+    font-size: 22px;
   }
 }
 
